@@ -1,0 +1,62 @@
+ <!--use for single park page (and park.scss)  -->
+
+<div class="col-md-5 col-md-offset-1 singlePark">
+    <div class="slickCarousel col-md-12">
+        <div><img ng-repeat="slide in vm.slides" src="{{slide.image}}"></div>
+        <div class="wrapper">
+            <div class="carousel">
+                <div ng-repeat="slide in vm.slides" class="parkImages"><img ng-src="{{slide.image}}"></div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-repeat='park in vm.park'class="col-md-12 park">
+        <h2><b>{{park.name}}</b></2>
+        <h3>{{park.address}}</h3>
+        <div>
+            <p>{{park.description}}</p>
+        </div>
+
+        <div class="backHome" ui-sref="home">  <!-- go back to home page -->
+            <h3><i class="fa fa-home" aria-hidden="true"></i></h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="col-md-5 col-md-offset-1">
+        <h5>Current Park Conditions</h5>
+
+        <div id="weatherGoesHere" class="col-md-12">  <!-- weather  -->
+
+            <div class="iconDiv col-md-6">
+                <img class="icon" ng-src="{{vm.iconUrl}}">
+            </div>
+
+            <div class="descriptionDiv col-md-6">
+                <div class="tempDiv col-md-12">
+                    <p class="temp">{{vm.weather.main.temp}}°F</p>
+                </div>
+                <div class="conditionDiv col-md-12">
+                    <p class="condition">{{vm.weather.weather[0].description}}</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-12" id="singleMap"></div>      <!-- individual park map -->
+</div>
+
+<!--<div class="col-md-8 col-md-offset-2">
+            <div class="wrapper">
+                <h2>Slick Carousel Example<h2>
+                <div class="carousel">
+                    <div><img src="http://lorempixel.com/200/200/nature/"></div>
+                    <div><img src="http://lorempixel.com/200/200/fashion/"></div>
+                    <div><img src="http://lorempixel.com/200/200/sports/"></div>
+                    <div><img src="http://lorempixel.com/200/200/animal/"></div>
+                    <div><img src="http://lorempixel.com/200/200/abstract/"></div>
+                    <div><img src="http://lorempixel.com/200/200/people/"></div>
+                </div>
+            </div>
+        </div>-->

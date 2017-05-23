@@ -1,0 +1,146 @@
+body {
+  font-family: 'News Cycle', sans-serif;
+  background-color: #FAFAFA;
+  border-color: #E6E6E6; }
+  body header {
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #4DB4E8;
+    border-color: #E6E6E6;
+    padding-bottom: 100px;
+    height: 80px; }
+    body header .headerLeft {
+      cursor: pointer;
+      text-align: left;
+      padding-top: 15px; }
+      body header .headerLeft h2 {
+        font-family: 'Satisfy', cursive;
+        display: inline-block;
+        margin-bottom: 0px; }
+    body header .paw {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: inline-block !important;
+      border: 3px solid whitesmoke;
+      text-align: center;
+      position: relative;
+      background-color: #74BD4C; }
+      body header .paw:hover {
+        border-color: #FFFF0B; }
+      body header .paw h2 {
+        margin-left: -23px;
+        margin-top: 10px; }
+        body header .paw h2 i {
+          margin-left: 10px;
+          width: 100px;
+          height: 100px;
+          border-radius: 57px;
+          display: block;
+          margin: auto; }
+    body header .headerMiddle {
+      text-align: center;
+      margin-top: 25px; }
+    body header .slogan {
+      font-size: 40px;
+      font-family: FontAwesome, 'Satisfy', cursive; }
+    body header .headerRight {
+      text-align: right;
+      padding-top: 32px; }
+    body header .login {
+      color: #FFFFFF;
+      background-color: #3B5999;
+      height: 35px;
+      width: 100px; }
+      body header .login:hover {
+        color: #FFFF0B; }
+    body header .logout {
+      color: #FFFFFF;
+      background-color: #3B5999;
+      height: 35px;
+      width: 100px; }
+      body header .logout:hover {
+        color: #FFFF0B; }
+  body footer {
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #4DB4E8;
+    border-color: #E6E6E6;
+    padding-bottom: 80px;
+    height: 90px; }
+    body footer .footerLeft {
+      padding-top: 15px;
+      font-size: 14px; }
+    body footer .companyInfo img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      display: inline-block !important;
+      border: 3px solid whitesmoke;
+      background-color: whitesmoke;
+      position: relative; }
+    body footer .footerMiddle {
+      padding-top: 15px;
+      color: white;
+      display: inline-block;
+      text-align: center; }
+    body footer .social {
+      display: inline-block;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: inline-block !important;
+      border: 3px solid whitesmoke;
+      text-align: center;
+      position: relative;
+      margin-right: 10px; }
+      body footer .social:hover {
+        border-color: #FFFF0B; }
+      body footer .social h3 {
+        margin-left: -1px;
+        margin-top: 15px; }
+        body footer .social h3 i {
+          margin-left: 10px;
+          display: block;
+          margin: auto;
+          color: whitesmoke; }
+    body footer .facebook {
+      background-color: #3B5999; }
+    body footer .twitter {
+      background-color: #5EA9DD; }
+    body footer .youtube {
+      background-color: #BB0000; }
+    body footer .google {
+      background-color: #DF4A32; }
+    body footer .instagram {
+      background-color: #3F729B; }
+    body footer .pinterest {
+      background-color: #CF1914; }
+    body footer .footerRight {
+      padding-top: 15px;
+      cursor: pointer;
+      text-align: right; }
+      body footer .footerRight h3 {
+        display: inline-block;
+        margin-bottom: 0px; }
+    body footer .add {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: inline-block !important;
+      border: 3px solid whitesmoke;
+      text-align: center;
+      position: relative;
+      background-color: #74BD4C; }
+      body footer .add:hover {
+        border-color: #FFFF0B; }
+      body footer .add h3 {
+        margin-left: 0px;
+        margin-top: 15px; }
+        body footer .add h3 i {
+          margin-left: 10px;
+          width: 55px;
+          height: 55px;
+          border-radius: 57px;
+          display: block;
+          margin: auto; }

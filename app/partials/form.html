@@ -1,0 +1,15 @@
+<form novalidate name='parkDetails' ng-submit='vm.addPark(parkDetails.$valid)'>
+    <input type="text" placeholder="Park Name" ng-model="vm.park.name" required>
+    <input type="text" placeholder="Latitude" ng-model="vm.lat" required>
+    <input type="text" placeholder="Longitude" ng-model="vm.long" required>
+    <input type="text" placeholder="Address" ng-model="vm.park.address" required>
+    <input type="text" placeholder="Image(s)" ng-model="vm.images" required>
+    <textarea placeholder="Description" ng-model="vm.park.description" required class="description"></textarea>
+    <input type="submit" class="submitButton" value="[+] Add New Park">
+</form>
+
+<!-- vm.park.X is for when passing a value directly into the vm.park Object (like name or description)
+     vm.X is for when creating an object/array before passing into vm.park Object -->
+
+<!-- <input type="text" name="search" placeholder="&#xf041; Find your park ..."></div>  "&#x"" + Unicode: "f041", allows icon to appear inside placeholder
+					<h2><i class="fa fa-cloud" aria-hidden="true"></i></h2> -->

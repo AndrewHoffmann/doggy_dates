@@ -1,0 +1,102 @@
+.singlePark {
+    margin-bottom: 25px;
+}
+
+.wrapper{
+        width:100%;
+        text-align:center;
+}
+    .carousel{
+        width:90%;
+        margin:0px auto;
+        text-align:center;
+        .parkImages {
+            height: 200px;
+            img {
+                max-height: 100%;
+            }
+        }
+    }
+    .slick-slide{
+        margin:10px;
+        text-align:center;
+    }
+    .slick-slide img{
+        width:100%;
+        text-align:center;
+    }
+
+.backHome {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: inline-block !important;
+    border: 3px solid whitesmoke;
+    text-align: center;
+    position: relative;
+    background-color: #74BD4C;
+    color: white;
+    &:hover {
+        border-color: #FFFF0B;
+    }
+    h3 {
+        margin-left: 0px;
+        margin-top: 15px;
+        i {
+            margin-left: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 57px;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+h5 {
+    background-color: pink;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#weatherGoesHere {
+    background-color: orangered;
+    margin-bottom: 15px;
+}
+
+    .iconDiv {
+        text-align: right;
+    }
+
+        .icon {
+            height: 100px;
+            width: 100px;
+        }
+
+    .descriptionDiv {
+
+    }
+        .tempDiv {
+
+        }
+
+            .temp {
+                height: 50px;
+                font-size: 30px;
+            }
+
+        .conditionDiv {
+
+        }
+
+            .condition {
+                height: 50px;
+                font-size: 30px;
+            }
+
+    #singleMap {
+        height: 500px; 
+        display: block;
+        border: 2px solid #4DB4E8;
+    }
