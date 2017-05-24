@@ -31,7 +31,7 @@
             weather.then(response=>{
                 vm.weather = response.data;
                 console.log('vm.weather',vm.weather);
-                vm.iconUrl = `http://openweathermap.org/img/w/${response.data.weather[0].icon}.png`;
+                vm.iconUrl = `https://openweathermap.org/img/w/${response.data.weather[0].icon}.png`;
                 console.log(vm.iconUrl);
             });
 

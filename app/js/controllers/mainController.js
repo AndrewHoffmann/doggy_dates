@@ -40,7 +40,7 @@
         vm.setWeather = function(lat,long){
                 let weatherLat = lat;
                 let weatherLong = long;
-                var url = `http://api.openweathermap.org/data/2.5/weather?lat=${weatherLat}&lon=${weatherLong}&units=imperial&APPID=44ff95e6e64e7414cbcc6712d5d39d21`;
+                var url = `https://api.openweathermap.org/data/2.5/weather?lat=${weatherLat}&lon=${weatherLong}&units=imperial&APPID=44ff95e6e64e7414cbcc6712d5d39d21`;
                 localStorage.setItem('url', url);
                 console.log(url);
         }
