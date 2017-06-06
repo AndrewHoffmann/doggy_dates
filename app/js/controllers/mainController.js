@@ -25,10 +25,10 @@
             vm.menu = function(){
                 if(!vm.clicked){
                     vm.showMenu();
-                    clicked = true;
+                    vm.clicked = true;
                 } else if(vm.clicked){
                     vm.hideMenu();
-                    clicked = false;
+                    vm.clicked = false;
                 }
             };
 
