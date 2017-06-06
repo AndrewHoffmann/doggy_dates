@@ -61,6 +61,8 @@ body {
       width: 100px; }
       body header .logout:hover {
         color: #FFFF0B; }
+    body header .mobileMenu {
+      display: none; }
   body footer {
     display: inline-block;
     color: #FFFFFF;
@@ -148,5 +150,5 @@ body {
 @media (max-width: 991px) {
   .headerLeft .headerMiddle .headerRight {
     display: none; }
-  .hamburgerMenu {
+  .mobileMenu {
     display: block; } }
