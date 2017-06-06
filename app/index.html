@@ -54,11 +54,22 @@
 					<h2><i class="fa fa-paw" aria-hidden="true"></i></h2>
 				</div>
 			</div>
-			
+
 			<div class="container-fluid hiddenMenu hide">
 				<div class="row hiddenMenuRow">
 					<div class="col-md-12">
-						<h1>Hi there</h1>
+						<h1 ui-sref="home">Home</h1>
+						<div ng-if="!vm.isAuthenticated()"> <!-- if logged out, want login button to show -->
+							<div class="col-md-3 col-md-offset-1 hidden-sm hidden-xs">
+								<button class="login" ng-click="vm.authenticate('facebook')">Login with <i class="fa fa-facebook" aria-hidden="true"></i></button>
+								</div>
+						</div>
+
+						<div ng-if="vm.isAuthenticated()"> <!-- if logged in, want logout button to show -->
+							<div class="col-md-3 col-md-offset-1 hidden-sm hidden-xs">
+								<button class="logout" ng-click="vm.logout()">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
