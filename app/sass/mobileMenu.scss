@@ -1,66 +1,6 @@
 // Mobile Menu
 
-$bar-width: 30px;
-$bar-height: 3px;
-$bar-spacing: 8px;
 
-.hamburgerMenu {
-  z-index: 9999;
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin-top: 27px;
-  margin-right: 60px;
-  width: $bar-width;
-  height: $bar-height + $bar-spacing*2;
-  cursor: pointer;
-}
-
-.bar, .bar:after, .bar:before {
-  width: $bar-width;
-  height: $bar-height;
-}
-
-.bar {
-  position: relative;
-  transform: translateY($bar-spacing);
-  background: white;
-  transition: all 0ms 200ms;
-  
-  &.animate {
-    background: rgba(255, 255, 255, 0); 
-  }
-}
-
-.bar:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: $bar-spacing;
-  background: white;
-  transition: bottom 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.bar:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: $bar-spacing;
-  background: white;
-  transition: top 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.bar.animate:after {
-  top: 0;
-  transform: rotate(45deg);
-  transition: top 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);;
-}
-
-.bar.animate:before {
-  bottom: 0;
-  transform: rotate(-45deg);
-  transition: bottom 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);;
-}
 
 
 //Hidden Menu
