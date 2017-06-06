@@ -24,10 +24,10 @@
             };
             vm.menu = function(){
                 if(!vm.clicked){
-                    showMenu();
+                    vm.showMenu();
                     clicked = true;
                 } else if(vm.clicked){
-                    hideMenu();
+                    vm.hideMenu();
                     clicked = false;
                 }
             };
