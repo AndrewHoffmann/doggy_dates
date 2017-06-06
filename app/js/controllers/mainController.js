@@ -32,7 +32,7 @@
                 }
             };
 
-            $(body).on('click', function(){
+            $('body').on('click', function(){
                 vm.menu();
             });
 
