@@ -18,26 +18,7 @@ $(document).ready(function(){
         .module('dogPark', ['ui.router','satellizer'])  // change dogPark for different projects, update index.html
         .config(function($stateProvider, $urlRouterProvider, $authProvider, $locationProvider){
 
-            var clicked = false;
-            var hideMenu = function(){
-                $('.hiddenMenu').removeClass('show');
-                $('.hiddenMenu').addClass('hide');
-            };
-
-            var showMenu = function(){
-                $('.hiddenMenu').removeClass('hide');
-                $('.hiddenMenu').addClass('show');
-            };
-            $('.mobileMenu').on("click",function(){
-                if(!clicked){
-                    showMenu();
-                    clicked = true;
-                } else if(clicked){
-                    hideMenu();
-                    clicked = false;
-                }
-            })
-
+            
             $locationProvider.html5Mode(true);
 
             $authProvider.facebook({

@@ -1,7 +1,7 @@
 <!-- use for all parks page (and home.scss) -->
 
 <div class='col-md-8 col-md-offset-2'>
-    <div ng-repeat='park in vm.parks' ng-click="vm.setWeather(park.location.lat, park.location.long); vm.setPark(park._id)" class="col-md-4 park" ui-sref="park">
+    <div ng-repeat='park in vm.parks' ng-click="vm.setWeather(park.location.lat, park.location.long); vm.setPark(park._id); vm.menu()" class="col-md-4 park" ui-sref="park">
         <div class="parkImage">
             <img src="{{park.images[0]}}">
         </div>

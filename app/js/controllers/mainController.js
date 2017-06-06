@@ -12,6 +12,30 @@
                 console.log(vm.parks);
             })
 
+            vm.clicked = false;
+            vm.hideMenu = function(){
+                $('.hiddenMenu').removeClass('show');
+                $('.hiddenMenu').addClass('hide');
+            };
+
+            vm.showMenu = function(){
+                $('.hiddenMenu').removeClass('hide');
+                $('.hiddenMenu').addClass('show');
+            };
+            vm.menu = function(){
+                if(!vm.clicked){
+                    showMenu();
+                    clicked = true;
+                } else if(vm.clicked){
+                    hideMenu();
+                    clicked = false;
+                }
+            };
+
+            $(body).on('click', function(){
+                vm.menu();
+            });
+
         vm.setPark = function(id){
             localStorage.setItem('park_id', id);
         }
