@@ -215,5 +215,5 @@ body {
 
 @media(max-width:991px){
     .headerLeft .headerMiddle .headerRight { display: none;}
-    .mobileMenu { display: block;}
+    .mobileMenu { display: block !important;}
 }

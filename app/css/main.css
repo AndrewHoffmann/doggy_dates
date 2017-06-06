@@ -151,4 +151,4 @@ body {
   .headerLeft .headerMiddle .headerRight {
     display: none; }
   .mobileMenu {
-    display: block; } }
+    display: block !important; } }
