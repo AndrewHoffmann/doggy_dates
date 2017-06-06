@@ -2,7 +2,9 @@ form {
   width: 200px;
   height: 500px;
   text-align: center;
-  margin-left: 40vw; }
+  margin-left: 40vw;
+  margin-top: 15px;
+  margin-bottom: 15px; }
   form input {
     display: block !important;
     margin-bottom: 25px;

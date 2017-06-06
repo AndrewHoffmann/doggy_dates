@@ -17,7 +17,7 @@ $(document).ready(function(){
             $authProvider.facebook({
                 clientId: '1047549625374955',   // App ID developers.facebook.com/apps
                 name: 'facebook',
-                url: '/auth/facebook',
+                url: 'https://doggydatesbackend.herokuapp.com/auth/facebook',
                 authorizationEndpoint: 'https://www.facebook.com/v2.5/dialog/oauth',
                 redirectUri: window.location.origin + '/',
                 requiredUrlParams: ['display', 'scope'],

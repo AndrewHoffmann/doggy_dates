@@ -1,7 +1,9 @@
+'use strict';
+
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 const cors = require('cors');
 const mongoose = require('mongoose');
 const jwt = require('jwt-simple');
@@ -13,10 +15,10 @@ mongoose.connect('mongodb://andrew:quidfacit01@ds011912.mlab.com:11912/doggydate
 
 app.use(cors());
 app.use(express.static('app'));
+app.use(express.static('public'));
 app.use(express.static(__dirname));
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true })); 
-
 
 app.get('/',(req,res)=>{
 	res.sendFile(path.resolve(__dirname,'./app/index.html'));

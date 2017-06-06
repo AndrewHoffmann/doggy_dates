@@ -21,6 +21,10 @@
                         vm.slides.push({image: imageUrl});
                         })
                     })
+
+                    setTimeout(()=>{
+                        $('.bxslider').bxSlider();
+                    },100)
                 })
             }
             vm.getPark();
@@ -53,6 +57,8 @@
             var marker = L.marker([lat, long]).addTo(mymap);
             marker.bindPopup(`<h4><b>${park.name}</b></h4><h6>${park.address}</h6>`).openPopup();
         })
+                
+
         },1000)
             
         });
