@@ -32,10 +32,6 @@
                 }
             };
 
-            $('body').on('click', function(){
-                vm.menu();
-            });
-
         vm.setPark = function(id){
             localStorage.setItem('park_id', id);
         }
