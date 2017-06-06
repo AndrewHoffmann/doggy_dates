@@ -12,7 +12,9 @@ $(document).ready(function(){
 
     angular
         .module('dogPark', ['ui.router','satellizer'])  // change dogPark for different projects, update index.html
-        .config(function($stateProvider, $urlRouterProvider, $authProvider){
+        .config(function($stateProvider, $urlRouterProvider, $authProvider, $locationProvider){
+
+            $locationProvider.html5Mode(true);
 
             $authProvider.facebook({
                 clientId: '1047549625374955',   // App ID developers.facebook.com/apps
