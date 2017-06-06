@@ -1,0 +1,13 @@
+.mobileMenu .paw {
+  cursor: pointer; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.hiddenMenu {
+  background-color: rgba(32, 32, 32, 0.6);
+  text-align: center;
+  color: whitesmoke; }
