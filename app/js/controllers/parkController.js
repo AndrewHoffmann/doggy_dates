@@ -50,10 +50,6 @@
                 }
             };
 
-            $(body).on('click', function(){
-                vm.menu();
-            });
-
             let url = localStorage.getItem('url');
 
             let weather = API.getWeather(url);
