@@ -3,6 +3,7 @@
 $bar-width: 30px;
 $bar-height: 3px;
 $bar-spacing: 8px;
+
 .hamburgerMenu {
   z-index: 9999;
   position: fixed;
@@ -14,10 +15,12 @@ $bar-spacing: 8px;
   height: $bar-height + $bar-spacing*2;
   cursor: pointer;
 }
+
 .bar, .bar:after, .bar:before {
   width: $bar-width;
   height: $bar-height;
 }
+
 .bar {
   position: relative;
   transform: translateY($bar-spacing);
@@ -28,6 +31,7 @@ $bar-spacing: 8px;
     background: rgba(255, 255, 255, 0); 
   }
 }
+
 .bar:before {
   content: "";
   position: absolute;
@@ -36,6 +40,7 @@ $bar-spacing: 8px;
   background: white;
   transition: bottom 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 .bar:after {
   content: "";
   position: absolute;
@@ -44,18 +49,22 @@ $bar-spacing: 8px;
   background: white;
   transition: top 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 .bar.animate:after {
   top: 0;
   transform: rotate(45deg);
   transition: top 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);;
 }
+
 .bar.animate:before {
   bottom: 0;
   transform: rotate(-45deg);
   transition: bottom 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);;
 }
 
+
 //Hidden Menu
+
 .hiddenMenu{
   display: block;
   height: 100%;
@@ -64,7 +73,6 @@ $bar-spacing: 8px;
   background: rgba(0,0,0,0.8);
   position: fixed;
   z-index: 999;
-  
   text-align: center;
   h4{
     font-size: 30px;
@@ -81,18 +89,22 @@ $bar-spacing: 8px;
     padding-top: 0;
   }
 }
+
 .paddingTop{
   padding-top: 80px;
 }
+
 .hiddenMenu{
   transition: .3s ease-in-out;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
   transition-delay: initial;
 }
+
 .navMenuHidden{
   transform: translateY(-115%) !important;
 }
+
 .navMenuVisible{
   transform: translateY(0%);
 }
