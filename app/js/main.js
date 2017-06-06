@@ -7,6 +7,17 @@ $(document).ready(function(){
   });
 });
 
+(() => {
+    $('.hamburgerMenu').on('click', function() {
+        $('.hiddenMenu').toggleClass('navMenuHidden');
+    })
+})();
+(() => {
+    $('.hamburgerMenu').on('click', function() {
+        $('.bar').toggleClass('animate');
+    })
+})();
+
 (function() {
     'use strict';
 

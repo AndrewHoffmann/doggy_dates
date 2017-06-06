@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/park.css">
 	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/mobileMenu.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.css" />
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
 	<link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
@@ -22,14 +23,14 @@
 	<!-- header will show on all pages use main.sass -->
 		<header class="header col-md-12">
 			
-			<div class="headerLeft col-md-3 col-md-offset-1" ui-sref="home">
+			<div class="headerLeft col-md-3 col-md-offset-1 hidden-sm hidden-xs" ui-sref="home">
 				<div class="paw">
 					<h2><i class="fa fa-paw" aria-hidden="true"></i></h2>
 				</div>
 					<h2>Doggy Dates</h2>
 			</div>
 
-			<div class ="headerMiddle col-md-4">  
+			<div class ="headerMiddle col-md-4 hidden-sm hidden-xs">  
 				<div class="slogan">
 					<p>"Find your Park, find your Bark!"</p>
 				</div>
@@ -37,14 +38,25 @@
 
 				<!-- facebook login/logout -->
 			<div ng-if="!vm.isAuthenticated()"> <!-- if logged out, want login button to show -->
-				<div class="headerRight col-md-3 col-md-offset-1">
+				<div class="headerRight col-md-3 col-md-offset-1 hidden-sm hidden-xs">
 					<button class="login" ng-click="vm.authenticate('facebook')">Login with <i class="fa fa-facebook" aria-hidden="true"></i></button>
 				</div>
 			</div>
 
 			<div ng-if="vm.isAuthenticated()"> <!-- if logged in, want logout button to show -->
-				<div class="headerRight col-md-3 col-md-offset-1">
+				<div class="headerRight col-md-3 col-md-offset-1 hidden-sm hidden-xs">
 					<button class="logout" ng-click="vm.logout()">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+				</div>
+			</div>
+
+			<div class="hamburgerMenu hidden-md hidden-lg">
+				<div class="bar"></div>
+			</div>
+			<div class="container-fluid hiddenMenu navMenuHidden navMenuVisible">
+				<div class="row hiddenMenuRow">
+					<div class="col-md-12">
+						<h1>Hi there</h1>
+					</div>
 				</div>
 			</div>
                
