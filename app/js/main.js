@@ -7,16 +7,27 @@ $(document).ready(function(){
   });
 });
 
-(() => {
-    $('.hamburgerMenu').on('click', function() {
-        $('.hiddenMenu').toggleClass('navMenuHidden');
-    })
-})();
-(() => {
-    $('.hamburgerMenu').on('click', function() {
-        $('.bar').toggleClass('animate');
-    })
-})();
+
+var clicked = false;
+var hideMenu = function(){
+    $('.hiddenMenu').removeClass('show');
+    $('.hiddenMenu').addClass('hide');
+    clicked = true;
+};
+
+var showMenu = function(){
+    $('.hiddenMenu').removeClass('hide');
+    $('.hiddenMenu').addClass('show');
+    clicked = false;
+};
+$('.mobileMenu').on("click",function(){
+    if(!clicked){
+    showMenu();
+    } else if(clicked){
+        hideMenu();
+    }
+})
+
 
 (function() {
     'use strict';
