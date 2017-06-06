@@ -2,10 +2,10 @@
   cursor: pointer; }
 
 .hide {
-  display: none; }
+  display: none !important; }
 
 .show {
-  display: block; }
+  display: block !important; }
 
 .hiddenMenu {
   background-color: rgba(32, 32, 32, 0.6);
