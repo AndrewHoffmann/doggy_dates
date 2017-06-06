@@ -17,24 +17,24 @@ $(document).ready(function(){
     angular
         .module('dogPark', ['ui.router','satellizer'])  // change dogPark for different projects, update index.html
         .config(function($stateProvider, $urlRouterProvider, $authProvider, $locationProvider){
-            
+
             var clicked = false;
             var hideMenu = function(){
                 $('.hiddenMenu').removeClass('show');
                 $('.hiddenMenu').addClass('hide');
-                clicked = true;
             };
 
             var showMenu = function(){
                 $('.hiddenMenu').removeClass('hide');
                 $('.hiddenMenu').addClass('show');
-                clicked = false;
             };
             $('.mobileMenu').on("click",function(){
                 if(!clicked){
-                showMenu();
+                    showMenu();
+                    clicked = true;
                 } else if(clicked){
                     hideMenu();
+                    clicked = false;
                 }
             })
 
